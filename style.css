@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Anybody", sans-serif;
+
+}
+
+.container{
+    width: min(90%, 1120px);
+    margin-inline: auto;
+}
+header{
+    background-color: #5f6770;
+    height: 4.5rem;
+    position: sticky;
+    width: 100%;
+    top: 0;
+
+}
+.desktop-menu{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    align-content: center;
+    
+    
+}
+.desktop-menu h1{
+    color: white;
+    font-size: 1.5rem;
+}
+.desktop-menu span{
+    color: #ed563b;
+}
+.menu-link{
+    display: flex;
+    justify-content:space-between;
+    gap: 26px;
+    align-items: center;
+   
+}
+.menu-link li{
+    list-style: none;
+}
+.menu-link li a{
+    text-decoration: none;
+    /* font-size:1rem; */
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+}
+.menu-link li:first-of-type a{
+    color: #ed563b;
+}
+.menu-link li a:hover{
+    color: #ed563b;
+}
+.menu-link li:last-child{
+    background-color: #ed563b;
+    padding: 10px;
+    margin-top: 2px;
+}
+
+.hero{
+    height:85vh;
+    background: linear-gradient(rgba(54, 54, 55, 0.3), rgba(57, 60, 65, 0.5)),url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGd5bXxlbnwwfHwwfHx8MA%3D%3D'); 
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.hero .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+.hero p{
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+}
+.hero h1{
+        font-size: 5rem;
+        font-weight: 800;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+}
+.hero em{
+    color: #ed563b;
+}
+
+.btn{
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 1.25rem;
+    color: #fafaf6;
+    border:  none;
+    cursor: pointer;
+    background-color: #ed563b;
+    transition: background-color 0.3s ease-in;
+}
+.hamburger{
+    display:none;
+}
+.choose-Program{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top:8rem ;
+    gap: 1.5rem;
+ 
+}
+.choose-Program em{
+    color: #ed563b;
+}
+.choose-Program p{
+    color: #5f6770;
+    line-height: 1.5rem;
+    text-align: center;
+    
+}
+.program-sec{
+    margin-top:5rem ;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: repeat(3,1fr);
+    gap: 3rem;
+}
+.program-list{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center; 
+    align-content: center;
+    gap: 30px;
+}
+
+.program-list img{
+    width: 100px;
+    height: 100px;
+}
+.program-list .program-contant{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 100%;
+}
+.program-list .program-contant h4{
+    align-items: start;
+    letter-spacing: 0.25px;
+    color: #232d39;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 7px;
+}
+.program-list .program-contant p{
+    line-height: 1.5rem;
+}
+.program-list .program-contant span{
+    padding: 5px 0 ;
+    color: #ed563b;
+}
+.program-list .program-contant p a{
+   text-decoration: none;
+   color: #317bff;
+}
+.program-list .program-contant p a:hover{
+    color: #86aef3;
+ }
+ .mopile-menu{
+    display: none;
+ }
+ .think{
+    background: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg");
+    padding: 120px 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-block: 6rem;
+ }
+ .thinkTexts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+ }
+ .thinkTexts span{
+    color: #ed563b;
+ }
+ .thinkTexts p{
+    line-height: 1.8rem;
+ }
+ .thinkTexts .btn{
+    width: 250px;
+ }
+ .tclasses{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-block: 30px;
+    gap: 3rem;
+ }
+ .traning-classes{
+    display: flex;
+    gap: 1rem;
+    box-shadow: 4px 4px 4px 4px #eeeeed ;
+    padding: 25px;
+    width: 330px;
+    margin-block: 30px;
+    align-items: center;
+    border-radius: 5px;
+ }
+ .first{
+    color: #ed563b;
+ }
+ .last{
+    background-color: #ed563b;
+    color: white;
+    box-shadow: none;
+    text-align: center;
+    justify-content: center;
+   
+ }
+ 
+ .frist-train{
+    margin-block: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+ }
+ .frist-train img{
+    border-radius: 5px;
+ }
+ .frist-train p{
+    line-height: 1.5rem;
+    color: #a2a2a1;
+ }
+ .frist-train .btn{
+    width: 200px;
+ }
+.schedules{
+    background: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg");
+}
+.classes{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    align-items: center;
+    padding: 50px;
+    gap: 2rem;
+    color: white;
+    margin-block: 6rem;
+}
+.classes img{
+    width: 60px;
+   
+}
+.classes em{
+    color: #ed563b;
+}
+.classes p{
+    text-align: center;
+    line-height: 1.8rem;
+}
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 40px;
+  }
+.experts{
+    margin-block: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+
+  }
+.expert-trainer{
+    width: 350px;
+    box-sizing:border-box;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 4px 4px  #eaead4  ;
+    gap: 20px;
+  }
+  .expert-trainer span{
+    color: #ed563b;
+    font-weight: 500;
+
+  }
+  .expert-trainer p{
+    color: gray;
+    line-height: 1.8rem;
+
+  }
+  .icons{
+    display: flex;
+    gap: 1.5rem;
+  }
+  .icons i{
+    color: #000000;
+  }
+ .contacts{
+    display: flex;
+ }
+ .forming{
+    display: flex;
+    flex-direction: column;
+    
+ }
+ 
+
+
+
+
+
+@media (max-width:768px){
+    .hamburger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        color: white;
+        /* padding: 15px; */
+        width: 50px;
+        height: 50px;
+        top: 7%;
+        right: 5%;
+        border-radius: 50%;
+        font-size: 2rem;
+    }
+    .desktop-menu{
+        display: flex;
+    }
+    .desktop-menu h1{
+        padding-top: 20px;
+    }
+    .desktop-menu h1 span{
+        padding-right: 20px;
+    }
+    .desktop-menu .menu-link{
+        display: none;
+
+    }
+    header{
+        background-color: #a2a2a1;
+    }
+
+    i {
+        z-index: 11111;
+        color: black;
+    }
+    .mopile-menu{
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        background: whitesmoke;
+        inset: 0 0 0 0;
+        color: #000000;
+        transform: translateX(1%);
+        transition: transform 350ms ease-in-out;
+        padding-top: 20px;
+    }
+    .mopile-menu[data-visible="false"] {
+        transform: translateX(100%);
+    }
+
+    .hamburger i[data-visible="true"]{
+        display: block;
+    }
+
+    .hamburger i[data-visible="false"]{
+        display: none;
+    }
+    .mopile-menu .navigation .menu-link{
+        display: flex;
+        flex-direction: column;
+    }
+    .mopile-menu .navigation .menu-link a{
+        color: black;
+    }
+    .choose-Program p{
+      
+       text-align: center;
+    }
+    .program-sec{
+        grid-template-columns: 1fr;
+    }
+    .tclasses{
+        grid-template-columns: 1fr;
+    }
+    .traning-classes{
+        width: 95%;
+    }
+    .frist-train img{
+        width: 95%;
+    }
+    .classes{
+        padding: 20px;
+    }
+    .experts{
+        grid-template-columns: 1fr;
+    }
+    .expert-trainer{
+        width: 100%;
+    }
+    .contacts{
+        flex-direction: column;
+    }
+    .contacts iframe{
+        width: 100%;
+    }
+    .contacts .forming form{
+        width: 100%;
+    }
+
+}
+  
+ 
+  
+ 
