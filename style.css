@@ -460,7 +460,7 @@ table, td, th {
         width: 95%;
     }
     .classes{
-        padding: 20px;
+        padding: 10px;
     }
     .experts{
         grid-template-columns: 1fr;
@@ -470,7 +470,7 @@ table, td, th {
     }
     table {
         border-collapse: collapse;
-        width: 50%;
+        width: 100%;
       }
       
       th, td {
